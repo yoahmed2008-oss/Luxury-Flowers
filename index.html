@@ -118,7 +118,6 @@
             fill: currentColor;
         }
 
-        /* زر فتح خرائط جوجل للتقييم 3D */
         .btn-google-review {
             background-color: #1a73e8;
             box-shadow: 0 5px 0 #1251a3, 0 8px 15px rgba(26, 115, 232, 0.25);
@@ -178,6 +177,7 @@
         .note {
             color: #000000;
             font-size: 13px;
+            line-height: 1.7;
             margin-bottom: 15px;
         }
 
@@ -215,44 +215,45 @@
             <p class="subtitle">أهلاً وسهلاً بكم<br>يسعدنا تواصلكم وزيارتكم</p>
 
             <div class="links-container">
-                <!-- فتح خرائط جوجل والوصول للتقييم مباشرة -->
-                <a id="google-review-btn"
-                   href="https://search.google.com/local/writereview?placeid=ChIJTxaeAxOXBxYRMqEviijB8-g"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="btn-link btn-google-review">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJTxaeAxOXBxYRMqEviijB8-g"
+                   data-pkg="com.google.android.apps.maps"
+                   class="btn-link btn-google-review app-smart-link">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
                     </svg>
-                    <span>فتح خرائط Google للتقييم</span>
+                    <span>قيّمنا على خرائط Google</span>
                 </a>
 
-                <!-- رابط سناب شات -->
-                <a href="https://www.snapchat.com/add/Z.f8311" target="_blank" rel="noopener noreferrer" class="btn-link btn-snapchat">
+                <a href="https://www.snapchat.com/add/Z.f8311"
+                   data-pkg="com.snapchat.android"
+                   class="btn-link btn-snapchat app-smart-link">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12.166 3c2.473.035 4.462 1.662 4.864 4.086.103.621.055 1.34.006 2.075l-.021.318c-.013.204.047.345.146.422.14.11.351.147.552.147.274 0 .563-.073.811-.19.167-.079.354-.12.536-.12.393 0 .76.197.96.517.185.296.197.661.033.972-.222.419-.737.674-1.367.856-.293.084-.621.158-.865.28-.24.12-.317.279-.266.529.342 1.675 1.547 3.091 3.168 3.732.337.133.541.454.513.806-.03.377-.308.685-.697.768-.696.148-1.457.245-2.155.311-.178.017-.314.138-.366.311-.116.387-.239.811-.384 1.189-.127.33-.422.533-.763.533-.125 0-.256-.027-.392-.081-.551-.218-1.158-.342-1.787-.342-.587 0-1.186.109-1.773.321-.674.244-1.377.498-2.201.498-.824 0-1.527-.254-2.201-.498-.587-.212-1.186-.321-1.773-.321-.629 0-1.236.124-1.787.342-.136.054-.267.081-.392.081-.341 0-.636-.203-.763-.533-.145-.378-.268-.802-.384-1.189-.052-.173-.188-.294-.366-.311-.698-.066-1.459-.163-2.155-.311-.389-.083-.667-.391-.697-.768-.028-.352.176-.673.513-.806 1.621-.641 2.826-2.057 3.168-3.732.051-.25-.026-.409-.266-.529-.244-.122-.572-.196-.865-.28-.63-.182-1.145-.437-1.367-.856-.164-.311-.152-.676.033-.972.2-.32.567-.517.96-.517.182 0 .369.041.536.12.248.117.537.19.811.19.201 0 .412-.037.552-.147.099-.077.159-.218.146-.422l-.021-.318c-.049-.735-.097-1.454.006-2.075C7.372 4.662 9.361 3.035 11.834 3h.332z"/>
                     </svg>
                     <span>تابعونا على Snapchat</span>
                 </a>
 
-                <!-- رابط انستغرام -->
-                <a href="https://www.instagram.com/z.f8311/" target="_blank" rel="noopener noreferrer" class="btn-link btn-instagram">
+                <a href="https://www.instagram.com/z.f8311/"
+                   data-pkg="com.instagram.android"
+                   class="btn-link btn-instagram app-smart-link">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
                     <span>تابعونا على Instagram</span>
                 </a>
 
-                <!-- رابط واتساب -->
-                <a href="https://wa.me/966536968311" target="_blank" rel="noopener noreferrer" class="btn-link btn-whatsapp">
+                <a href="https://wa.me/966536968311"
+                   data-pkg="com.whatsapp"
+                   class="btn-link btn-whatsapp app-smart-link">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/>
                     </svg>
                     <span>تواصلوا معنا عبر WhatsApp</span>
                 </a>
 
-                <!-- رابط تيك توك -->
-                <a href="https://www.tiktok.com/@z.f2030" target="_blank" rel="noopener noreferrer" class="btn-link btn-tiktok">
+                <a href="https://www.tiktok.com/@z.f2030"
+                   data-pkg="com.zhiliaoapp.musically"
+                   class="btn-link btn-tiktok app-smart-link">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                     </svg>
@@ -263,33 +264,34 @@
             <p class="note">اضغط على الزر المناسب للوصول إلينا</p>
             <div class="footer">
                 &copy; جميع الحقوق محفوظة لشركة عالم ساس للبرمجيات<br>
-                <a href="https://t.me/alamsaas" target="_blank" rel="noopener noreferrer">@alamsaas</a>
+                <a href="https://t.me/alamsaas" target="_top" rel="noopener noreferrer">@alamsaas</a>
             </div>
         </div>
     </div>
 
     <script>
-        // دعم فتح تطبيق Google Maps على iPhone عبر Universal Links وعلى Android عبر Intent
-        const reviewBtn = document.getElementById("google-review-btn");
-        const webReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJTxaeAxOXBxYRMqEviijB8-g";
-
-        reviewBtn.addEventListener("click", function (e) {
+        function openAppOrFallback(webUrl, androidPackage, fallbackUrl) {
             const ua = navigator.userAgent || "";
             const isAndroid = /Android/i.test(ua);
-            const isIOS = /iPhone|iPad|iPod/i.test(ua);
+            const isInAppBrowser = /FBAN|FBAV|Instagram|Snapchat|TikTok|Line|Twitter/i.test(ua);
 
-            if (isAndroid) {
-                e.preventDefault();
-                window.location.href =
-                    "intent://search.google.com/local/writereview?placeid=ChIJTxaeAxOXBxYRMqEviijB8-g#Intent;scheme=https;package=com.google.android.apps.maps;end";
-                setTimeout(() => {
-                    window.location.href = webReviewUrl;
-                }, 1200);
-            } else if (isIOS) {
-                // على iPhone نفتح الرابط مباشرة في السياق الحالي ليقوم iOS بالتقاط Universal Link وفتح تطبيق Google Maps إن وجد
-                e.preventDefault();
-                window.location.href = webReviewUrl;
+            if (isAndroid && androidPackage && !isInAppBrowser) {
+                const cleanUrl = webUrl.replace(/^https?:\/\//i, "");
+                const targetFallback = encodeURIComponent(fallbackUrl || webUrl);
+                window.location.href = `intent://${cleanUrl}#Intent;scheme=https;package=${androidPackage};S.browser_fallback_url=${targetFallback};end`;
+                return;
             }
+
+            window.location.href = webUrl;
+        }
+
+        document.querySelectorAll(".app-smart-link").forEach((link) => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const webUrl = this.getAttribute("href");
+                const androidPkg = this.getAttribute("data-pkg");
+                openAppOrFallback(webUrl, androidPkg, webUrl);
+            });
         });
     </script>
 
